@@ -11,34 +11,49 @@
 //       contener al menos una letra mayúscula, una letra minúscula y un número. 
 //       No está permitido usar expresiones regulares.
 
-function cadenaTexto ( cadena ) {
-    if ( cadenaTexto.length < 8 ) {
-        return false
-    }
-    let mayusculasNumero = false;
-    let minusculasNumero = false;
-    let numero = false;
+// function cadenaTexto ( cadena ) {
+//     if ( cadenaTexto.length < 8 ) {
+//         return false
+//     }
+//     let mayusculasNumero = false;
+//     let minusculasNumero = false;
+//     let numero = false;
  
-    for (let i = 0; i < cadenaTexto.length; i++){
-        const caracteres = cadena [i]
+//     for (let i = 0; i < cadenaTexto.length; i++){
+//         const caracteres = cadena [i]
 
-        if (caracteres >= "A" && caracteres <= "Z"){
-            mayusculasNumero = true;
-        } else if ( caracteres <= "0" && caracteres <= "0" ){
-            numero = true
-        }
-        if ( mayusculasNumero && minusculasNumero && numero) {
-            return true
-        }
+//         if (caracteres >= "A" && caracteres <= "Z"){
+//             mayusculasNumero = true;
+//         } else if ( caracteres <= "0" && caracteres <= "0" ){
+//             numero = true
+//         }
+//         if ( mayusculasNumero && minusculasNumero && numero) {
+//             return true
+//         }
         
-    }
-    return false;
-}
-console.log( cadenaTexto ("aBc123") );
+//     }
+//     return false;
+// }
+// console.log( cadenaTexto ("aBc123") );
 
 
 // 2.	Escribe una función que reciba un array de números ordenados de forma ascendente
 //      y devuelva el o los números faltantes en la secuencia.
+
+function encontrarNumeros(arr) {
+        let numerosFaltantes = [];
+        let resultado = encontrarNumeros([1,2,3,4]);
+        for( let i = 0; i < arr.length - 1; i++ ){
+        let diferencia = arr[i+1] - arr[i];
+        if (diferencia > 1){
+            for(let j = 1; j < diferencia; j++){
+                numerosFaltantes.push(arr[i] + j);
+
+            }
+        }
+    }
+    return numerosFaltantes.push( arr[i] + j);
+}
 
 // function numeroQueFaltan (arr) {
 //     let numeroQueFaltan = [];
