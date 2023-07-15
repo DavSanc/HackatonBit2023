@@ -40,30 +40,43 @@
 // 2.	Escribe una función que reciba un array de números ordenados de forma ascendente
 //      y devuelva el o los números faltantes en la secuencia.
 
-function encontrarNumeros(arr) {
-        let numerosFaltantes = [];
-        let resultado = encontrarNumeros([1,2,3,4]);
-        for( let i = 0; i < arr.length - 1; i++ ){
-        let diferencia = arr[i+1] - arr[i];
-        if (diferencia > 1){
-            for(let j = 1; j < diferencia; j++){
-                numerosFaltantes.push(arr[i] + j);
+// function encontrarNumeros(arr) {
+//         let numerosFaltantes = [];
+//         let resultado = encontrarNumeros([1,2,3,4]);
+//         for( let i = 0; i < arr.length - 1; i++ ){
+//         let diferencia = arr[i+1] - arr[i];
+//         if (diferencia > 1){
+//             for(let j = 1; j < diferencia; j++){
+//                 numerosFaltantes.push(arr[i] + j);
 
-            }
-        }
-    }
-    return numerosFaltantes.push( arr[i] + j);
-}
+//             }
+//         }
+//     }
+//     return numerosFaltantes.push( arr[i] + j);
+// }
 
 
 
-// 3.	Escribe una función que reciba una cadena de texto con varias palabras separadas por espacios y 
-// devuelva la cadena de texto con las palabras ordenadas alfabéticamente. 
+// // 3.	Escribe una función que reciba una cadena de texto con varias palabras separadas por espacios y 
+// // devuelva la cadena de texto con las palabras ordenadas alfabéticamente. 
 
-function ordenarPalabras(cadena) {
-    return cadena.split('').sort.join('');
-    let resultado = ordenarPalabras ("adsc klmo");
-}
+// function ordenarPalabras(cadena) {
+//     return cadena.split('').sort.join('');
+//     let resultado = ordenarPalabras ("adsc klmo");
+// }
 
 // 4.	Escribe una función que reciba una cadena
 //     de texto como parámetro y devuelva la cantidad de vocales que contiene. 
+
+function contarVocales (cadena) {
+    let contador = 0;
+    let vocales = [a, e, i, o, u];
+    for(let i = 0; i < cadena.length; i++ ){
+        if (vocales.includes(cadena[i].toLowercase())){
+            
+        }
+        let texto = 'hola mundo'
+        let numeroVocales = contarVocales(texto)
+    }
+   console.log(texto); 
+}
