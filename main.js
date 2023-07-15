@@ -55,12 +55,15 @@ function encontrarNumeros(arr) {
     return numerosFaltantes.push( arr[i] + j);
 }
 
-// function numeroQueFaltan (arr) {
-//     let numeroQueFaltan = [];
-// }
+
 
 // 3.	Escribe una función que reciba una cadena de texto con varias palabras separadas por espacios y 
 // devuelva la cadena de texto con las palabras ordenadas alfabéticamente. 
+
+function ordenarPalabras(cadena) {
+    return cadena.split('').sort.join('');
+    let resultado = ordenarPalabras ("adsc klmo");
+}
 
 // 4.	Escribe una función que reciba una cadena
 //     de texto como parámetro y devuelva la cantidad de vocales que contiene. 
